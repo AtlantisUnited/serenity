@@ -10,14 +10,14 @@ import {
   ReplyQueriesService,
   UpdateProjectCommand,
 } from '@collaboration/application'
-import { MapValidationErrorsInterceptor }                        from '@monstrs/nestjs-map-errors-interceptor'
+import { MapValidationErrorsInterceptor }                        from '@atls/nestjs-map-errors-interceptor'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)
 export class ProjectController {
   constructor(
     private readonly projectService: ProjectService,
-    private readonly replyService: ReplyQueriesService,
+    private readonly replyService: ReplyQueriesService
   ) {}
 
   @GrpcMethod('CollaborationService', 'updateProject')

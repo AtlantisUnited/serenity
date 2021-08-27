@@ -4,20 +4,14 @@ import { Repository }       from 'typeorm'
 
 import { Review }           from '@collaboration/persistence'
 
-interface PageInfo {
-  hasNext: boolean
-}
-
-interface FindAllResponse<T> {
-  rows: T[]
-  pageInfo: PageInfo
-}
+import { PageInfo } from '../interfaces'
+import { FindAllResponse } from '../interfaces'
 
 @Injectable()
 export class ReviewQueriesService {
   constructor(
     @InjectRepository(Review)
-    private readonly reviewRepository: Repository<Review>,
+    private readonly reviewRepository: Repository<Review>
   ) {}
 
   async findAll(pager?: any, filters?: any): Promise<FindAllResponse<Review>> {

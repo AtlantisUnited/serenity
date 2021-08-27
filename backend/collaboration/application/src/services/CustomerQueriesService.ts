@@ -4,20 +4,14 @@ import { Repository }       from 'typeorm'
 
 import { Customer }         from '@collaboration/persistence'
 
-interface PageInfo {
-  hasNext: boolean
-}
-
-interface FindAllResponse<T> {
-  rows: T[]
-  pageInfo: PageInfo
-}
+import { PageInfo } from '../interfaces'
+import { FindAllResponse } from '../interfaces'
 
 @Injectable()
 export class CustomerQueriesService {
   constructor(
     @InjectRepository(Customer)
-    private readonly customerRepository: Repository<Customer>,
+    private readonly customerRepository: Repository<Customer>
   ) {}
 
   async findAll(filters: any = {}): Promise<FindAllResponse<Customer>> {
