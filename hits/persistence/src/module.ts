@@ -4,10 +4,10 @@ import { Global }        from '@nestjs/common'
 import { Module }        from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'
 
-import config            from './config'
 import { Activity }      from './entities'
 import { Counter }       from './entities'
 import { View }          from './entities'
+import config            from './config'
 
 const feature = TypeOrmModule.forFeature([Counter, View, Activity])
 

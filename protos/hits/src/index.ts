@@ -1,6 +1,5 @@
 import { ClientOptions }              from '@nestjs/microservices'
 import { Transport }                  from '@nestjs/microservices'
-
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-underscore-dangle */
 import path                           from 'path'

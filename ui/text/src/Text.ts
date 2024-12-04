@@ -1,5 +1,4 @@
 import styled         from '@emotion/styled'
-
 import { color }      from 'styled-system'
 import { space }      from 'styled-system'
 import { system }     from 'styled-system'

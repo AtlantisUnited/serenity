@@ -1,7 +1,6 @@
 import styled         from '@emotion/styled'
-
-import React          from 'react'
 import { switchProp } from 'styled-tools'
+import React          from 'react'
 
 import { StarIcon }   from '@ui/icons'
 

@@ -4,9 +4,8 @@ import { Injectable }       from '@nestjs/common'
 import { OnModuleInit }     from '@nestjs/common'
 import { Client }           from '@nestjs/microservices'
 import { ClientGrpc }       from '@nestjs/microservices'
-
-import DataLoader           from 'dataloader'
 import { map }              from 'rxjs/operators'
+import DataLoader           from 'dataloader'
 
 import { clientOptions }    from '@protos/files'
 import { files }            from '@protos/interfaces'

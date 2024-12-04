@@ -1,8 +1,6 @@
 import { SettingsFlow }         from '@atls/next-identity-integration'
-
 import React                    from 'react'
 
-import ChangePassword           from '@identity/settings-fragment'
 import { ForwardArrowLeftIcon } from '@ui/icons'
 import { LogoIcon }             from '@ui/icons'
 import { Box }                  from '@ui/layout'
@@ -10,6 +8,7 @@ import { Column }               from '@ui/layout'
 import { Layout }               from '@ui/layout'
 import { Row }                  from '@ui/layout'
 import { Link }                 from '@ui/link'
+import ChangePassword           from '@identity/settings-fragment'
 
 export const SettingsPage = () => (
   <SettingsFlow>

@@ -5,7 +5,6 @@ import { Context }                                from '@nestjs/graphql'
 import { Mutation }                               from '@nestjs/graphql'
 import { Client }                                 from '@nestjs/microservices'
 import { ClientGrpc }                             from '@nestjs/microservices'
-
 import { firstValueFrom }                         from 'rxjs'
 
 import { clientOptions }                          from '@protos/collaboration'

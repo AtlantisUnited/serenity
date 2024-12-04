@@ -1,6 +1,8 @@
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }             from '@nestjs/graphql'
 
-import { Category } from './Category'
+import { ObjectType } from '@nestjs/graphql'
+
+import { Category }          from './Category'
 
 @ObjectType()
 export class CategoryGroup {
@@ -10,6 +12,6 @@ export class CategoryGroup {
   @Field()
   name: string
 
-  @Field(type => [Category])
+  @Field((type) => [Category])
   children: Category[]
 }

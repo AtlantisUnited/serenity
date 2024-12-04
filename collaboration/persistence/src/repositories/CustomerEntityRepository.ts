@@ -3,7 +3,6 @@ import { Logger }                     from '@monstrs/nestjs-logger'
 import { Injectable }                 from '@nestjs/common'
 import { WriteRepository }            from '@node-ts/ddd'
 import { Uuid }                       from '@node-ts/ddd-types'
-
 import { Connection }                 from 'typeorm'
 
 import { Customer as CustomerEntity } from '@collaboration/domain'

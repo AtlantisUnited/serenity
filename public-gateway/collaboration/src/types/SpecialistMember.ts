@@ -1,8 +1,10 @@
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }             from '@nestjs/graphql'
 
-import { Account } from './Account'
-import { Interaction } from './Interaction'
-import { Specialisation } from './Specialisation'
+import { ObjectType } from '@nestjs/graphql'
+
+import { Account }           from './Account'
+import { Interaction }       from './Interaction'
+import { Specialisation }    from './Specialisation'
 
 @ObjectType()
 export class SpecialistMember {
@@ -24,7 +26,7 @@ export class SpecialistMember {
   @Field({ nullable: true })
   specialisation: Specialisation
 
-  @Field(type => Account)
+  @Field((type) => Account)
   account: Account
 
   @Field({ nullable: true })

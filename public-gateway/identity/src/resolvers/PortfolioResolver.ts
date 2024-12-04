@@ -7,7 +7,6 @@ import { Root }          from '@nestjs/graphql'
 import { ID }            from '@nestjs/graphql'
 import { Client }        from '@nestjs/microservices'
 import { ClientGrpc }    from '@nestjs/microservices'
-
 import { map }           from 'rxjs/operators'
 
 import { portfolio }     from '@protos/interfaces'

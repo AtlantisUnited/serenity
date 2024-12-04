@@ -1,5 +1,4 @@
 import { useQuery } from '@apollo/client'
-
 import gql          from 'graphql-tag'
 
 export const queryProjects = gql`

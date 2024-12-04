@@ -1,9 +1,8 @@
 import styled         from '@emotion/styled'
-
-import React          from 'react'
 import { styleFn }    from 'styled-system'
 import { ifProp }     from 'styled-tools'
 import { switchProp } from 'styled-tools'
+import React          from 'react'
 
 const base: styleFn = ({ theme }) => ({
   width: '100%',

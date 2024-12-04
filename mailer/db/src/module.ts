@@ -2,8 +2,8 @@ import { Global }        from '@nestjs/common'
 import { Module }        from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'
 
-import config            from './config'
 import { Sending }       from './entities'
+import config            from './config'
 
 const feature = TypeOrmModule.forFeature([Sending])
 

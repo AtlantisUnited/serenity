@@ -1,16 +1,19 @@
-import { User } from '@public-gateway/identity'
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }             from '@nestjs/graphql'
 
-import { Message } from './Message'
+import { ObjectType } from '@nestjs/graphql'
+
+import { User }              from '@public-gateway/identity'
+
+import { Message }           from './Message'
 
 @ObjectType()
 export class Discussion {
   @Field()
   id: string
 
-  @Field(type => [Message])
+  @Field((type) => [Message])
   messages: Message[]
 
-  @Field(type => User)
+  @Field((type) => User)
   recipient: User
 }

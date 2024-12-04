@@ -5,7 +5,6 @@ import { ResolveField }                                from '@nestjs/graphql'
 import { Resolver }                                    from '@nestjs/graphql'
 import { Client }                                      from '@nestjs/microservices'
 import { ClientGrpc }                                  from '@nestjs/microservices'
-
 import { firstValueFrom }                              from 'rxjs'
 
 import { clientOptions as collaborationClientOptions } from '@protos/collaboration'

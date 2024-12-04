@@ -1,10 +1,9 @@
 import styled           from '@emotion/styled'
-
-import React            from 'react'
 import { useEffect }    from 'react'
 import { useRef }       from 'react'
 import { ifProp }       from 'styled-tools'
 import { switchProp }   from 'styled-tools'
+import React            from 'react'
 
 import { Divider }      from '@ui/divider'
 import { SendIcon }     from '@ui/icons'

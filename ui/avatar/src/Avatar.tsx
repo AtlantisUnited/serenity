@@ -1,5 +1,4 @@
 import styled     from '@emotion/styled'
-
 import { layout } from 'styled-system'
 
 interface AvatarProps {

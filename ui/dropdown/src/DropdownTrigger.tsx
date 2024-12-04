@@ -1,5 +1,4 @@
 import styled  from '@emotion/styled'
-
 import Trigger from 'rc-trigger'
 import React   from 'react'
 

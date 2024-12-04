@@ -1,17 +1,19 @@
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }             from '@nestjs/graphql'
 
-import { Discussion } from './Discussion'
-import { Project } from './Project'
+import { ObjectType } from '@nestjs/graphql'
+
+import { Discussion }        from './Discussion'
+import { Project }           from './Project'
 
 @ObjectType()
 export class Reply {
   @Field()
   id: string
 
-  @Field(type => Discussion)
+  @Field((type) => Discussion)
   discussion: Discussion
 
-  @Field(type => Project)
+  @Field((type) => Project)
   project: Project
 
   @Field()
