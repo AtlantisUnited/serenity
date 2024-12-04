@@ -1,6 +1,5 @@
 import { Field }                      from '@nestjs/graphql'
-
-import { ObjectType }          from '@nestjs/graphql'
+import { ObjectType }                 from '@nestjs/graphql'
 
 import { AddDiscussionMessageErrors } from './AddDiscussionMessageErrors'
 import { Message }                    from './Message'

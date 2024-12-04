@@ -1,8 +1,7 @@
-import { Field }             from '@nestjs/graphql'
+import { Field }       from '@nestjs/graphql'
+import { ObjectType }  from '@nestjs/graphql'
 
-import { ObjectType } from '@nestjs/graphql'
-
-import { UploadField }       from './UploadField'
+import { UploadField } from './UploadField'
 
 @ObjectType()
 export class Upload {

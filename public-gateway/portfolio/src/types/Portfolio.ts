@@ -1,10 +1,8 @@
-import { Field }                 from '@nestjs/graphql'
-
-import { ID }             from '@nestjs/graphql'
-
+import { Field }      from '@nestjs/graphql'
+import { ID }         from '@nestjs/graphql'
 import { ObjectType } from '@nestjs/graphql'
 
-import { File }                  from '@public-gateway/files'
+import { File }       from '@public-gateway/files'
 
 @ObjectType()
 export class Portfolio {

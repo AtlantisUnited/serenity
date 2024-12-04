@@ -1,13 +1,12 @@
-import { Field }             from '@nestjs/graphql'
+import { Field }          from '@nestjs/graphql'
+import { ObjectType }     from '@nestjs/graphql'
 
-import { ObjectType } from '@nestjs/graphql'
+import { Profile }        from '@public-gateway/identity'
+import { Portfolio }      from '@public-gateway/portfolio'
 
-import { Profile }           from '@public-gateway/identity'
-import { Portfolio }         from '@public-gateway/portfolio'
-
-import { Interaction }       from './Interaction'
-import { Review }            from './Review'
-import { Specialisation }    from './Specialisation'
+import { Interaction }    from './Interaction'
+import { Review }         from './Review'
+import { Specialisation } from './Specialisation'
 
 @ObjectType()
 export class Specialist {

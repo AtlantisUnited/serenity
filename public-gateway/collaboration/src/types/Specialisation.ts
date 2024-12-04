@@ -1,8 +1,7 @@
-import { Field }             from '@nestjs/graphql'
-
+import { Field }      from '@nestjs/graphql'
 import { ObjectType } from '@nestjs/graphql'
 
-import { Category }          from '@public-gateway/catalog'
+import { Category }   from '@public-gateway/catalog'
 
 @ObjectType()
 export class Specialisation {

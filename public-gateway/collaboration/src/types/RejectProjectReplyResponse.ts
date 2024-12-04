@@ -1,6 +1,5 @@
 import { Field }                    from '@nestjs/graphql'
-
-import { ObjectType }        from '@nestjs/graphql'
+import { ObjectType }               from '@nestjs/graphql'
 
 import { RejectProjectReplyErrors } from './RejectProjectReplyErrors'
 import { Reply }                    from './Reply'

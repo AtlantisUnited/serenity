@@ -1,10 +1,9 @@
-import { Field }             from '@nestjs/graphql'
-
+import { Field }      from '@nestjs/graphql'
 import { ObjectType } from '@nestjs/graphql'
 
-import { User }              from '@public-gateway/identity'
+import { User }       from '@public-gateway/identity'
 
-import { Message }           from './Message'
+import { Message }    from './Message'
 
 @ObjectType()
 export class Discussion {

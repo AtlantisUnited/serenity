@@ -1,6 +1,5 @@
 import { Field }               from '@nestjs/graphql'
-
-import { ObjectType }   from '@nestjs/graphql'
+import { ObjectType }          from '@nestjs/graphql'
 
 import { CreateProjectErrors } from './CreateProjectErrors'
 import { Project }             from './Project'

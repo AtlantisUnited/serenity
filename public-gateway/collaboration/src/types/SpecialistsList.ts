@@ -1,10 +1,9 @@
-import { Field }             from '@nestjs/graphql'
-
+import { Field }      from '@nestjs/graphql'
 import { ObjectType } from '@nestjs/graphql'
 
-import { PageInfo }          from '@public-gateway/types'
+import { PageInfo }   from '@public-gateway/types'
 
-import { Specialist }        from './Specialist'
+import { Specialist } from './Specialist'
 
 @ObjectType()
 export class SpecialistsList {

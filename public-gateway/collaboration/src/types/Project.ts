@@ -1,13 +1,12 @@
-import { Field }             from '@nestjs/graphql'
+import { Field }          from '@nestjs/graphql'
+import { ObjectType }     from '@nestjs/graphql'
 
-import { ObjectType } from '@nestjs/graphql'
+import { Category }       from '@public-gateway/catalog'
+import { File }           from '@public-gateway/files'
 
-import { Category }          from '@public-gateway/catalog'
-import { File }              from '@public-gateway/files'
-
-import { ProjectAddress }    from './ProjectAddress'
-import { ProjectOwner }      from './ProjectOwner'
-import { Reply }             from './Reply'
+import { ProjectAddress } from './ProjectAddress'
+import { ProjectOwner }   from './ProjectOwner'
+import { Reply }          from './Reply'
 
 @ObjectType()
 export class Project {
