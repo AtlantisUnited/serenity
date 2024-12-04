@@ -2,7 +2,6 @@ import { Bus }                    from '@monstrs/nestjs-bus'
 import { Logger }                 from '@monstrs/nestjs-logger'
 import { Injectable }             from '@nestjs/common'
 import { WriteRepository }        from '@node-ts/ddd'
-
 import { Connection }             from 'typeorm'
 
 import { Review as ReviewEntity } from '@collaboration/domain'

@@ -1,8 +1,7 @@
 import { UserProvider } from '@atls/react-user'
-
+import { Component }    from 'react'
 /* eslint-disable no-underscore-dangle */
 import React            from 'react'
-import { Component }    from 'react'
 
 declare global {
   interface Window {

@@ -11,7 +11,11 @@ export class UserRegistered extends Event {
 
   $version = 0
 
-  constructor(readonly userId: Uuid, readonly email: Email, readonly credentials: Credentials) {
+  constructor(
+    readonly userId: Uuid,
+    readonly email: Email,
+    readonly credentials: Credentials
+  ) {
     super()
   }
 }

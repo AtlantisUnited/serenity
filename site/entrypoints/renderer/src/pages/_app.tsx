@@ -4,7 +4,6 @@
 import { withApollo }         from '@atls/next-app-with-apollo'
 import { withHelmet }         from '@atls/next-app-with-helmet'
 import { withProvider }       from '@atls/next-app-with-provider'
-
 import App                    from 'next/app'
 import compose                from 'recompose/compose'
 

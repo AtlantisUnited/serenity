@@ -1,13 +1,12 @@
-import styled                      from '@emotion/styled'
 import { createShouldForwardProp } from '@styled-system/should-forward-prop'
-
-import React                       from 'react'
+import styled                      from '@emotion/styled'
 import { border }                  from 'styled-system'
 import { flexbox }                 from 'styled-system'
 import { system }                  from 'styled-system'
 import { typography }              from 'styled-system'
 import { ifProp }                  from 'styled-tools'
 import { switchProp }              from 'styled-tools'
+import React                       from 'react'
 
 import { StyledButtonProps }       from './types'
 import { divideChildren }          from './utils'

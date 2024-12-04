@@ -1,6 +1,5 @@
 import { Injectable }       from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
-
 import { Brackets }         from 'typeorm'
 import { Repository }       from 'typeorm'
 

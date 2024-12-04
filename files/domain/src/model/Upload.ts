@@ -1,6 +1,5 @@
 import { AggregateRoot }           from '@node-ts/ddd'
 import { AggregateRootProperties } from '@node-ts/ddd-types'
-
 import { format }                  from 'url'
 import { parse }                   from 'url'
 

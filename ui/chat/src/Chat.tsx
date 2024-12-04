@@ -1,7 +1,6 @@
 import styled                   from '@emotion/styled'
-
-import React                    from 'react'
 import { ifProp }               from 'styled-tools'
+import React                    from 'react'
 
 import { Avatar }               from '@ui/avatar'
 import { CloseIcon }            from '@ui/icons'

@@ -10,7 +10,11 @@ export class ResetPasswordRequested extends Event {
 
   $version = 0
 
-  constructor(readonly userId: Uuid, readonly email: Email, readonly resetToken: string) {
+  constructor(
+    readonly userId: Uuid,
+    readonly email: Email,
+    readonly resetToken: string
+  ) {
     super()
   }
 }

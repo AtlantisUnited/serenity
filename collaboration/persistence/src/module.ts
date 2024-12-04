@@ -4,7 +4,6 @@ import { Global }                     from '@nestjs/common'
 import { Module }                     from '@nestjs/common'
 import { TypeOrmModule }              from '@nestjs/typeorm'
 
-import config                         from './config'
 import { Chat }                       from './entities'
 import { Customer }                   from './entities'
 import { Discussion }                 from './entities'
@@ -22,6 +21,7 @@ import { ProjectEntityRepository }    from './repositories'
 import { ReplyEntityRepository }      from './repositories'
 import { ReviewEntityRepository }     from './repositories'
 import { SpecialistEntityRepository } from './repositories'
+import config                         from './config'
 
 const feature = TypeOrmModule.forFeature([
   Specialist,

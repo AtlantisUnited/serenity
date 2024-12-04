@@ -4,9 +4,9 @@ import { Global }                    from '@nestjs/common'
 import { Module }                    from '@nestjs/common'
 import { TypeOrmModule }             from '@nestjs/typeorm'
 
-import config                        from './config'
 import { Portfolio }                 from './entities'
 import { PortfolioEntityRepository } from './repositories'
+import config                        from './config'
 
 const feature = TypeOrmModule.forFeature([Portfolio])
 

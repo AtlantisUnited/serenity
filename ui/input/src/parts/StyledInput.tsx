@@ -1,6 +1,5 @@
-import styled                      from '@emotion/styled'
 import { createShouldForwardProp } from '@styled-system/should-forward-prop'
-
+import styled                      from '@emotion/styled'
 import { border }                  from 'styled-system'
 import { color }                   from 'styled-system'
 import { styleFn }                 from 'styled-system'

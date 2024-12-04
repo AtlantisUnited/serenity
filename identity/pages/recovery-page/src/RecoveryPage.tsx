@@ -1,8 +1,6 @@
 import { RecoveryFlow }         from '@atls/next-identity-integration'
-
 import React                    from 'react'
 
-import ResetPassword            from '@identity/recovery-fragment'
 import { ForwardArrowLeftIcon } from '@ui/icons'
 import { LogoIcon }             from '@ui/icons'
 import { Box }                  from '@ui/layout'
@@ -10,6 +8,7 @@ import { Column }               from '@ui/layout'
 import { Layout }               from '@ui/layout'
 import { Row }                  from '@ui/layout'
 import { Link }                 from '@ui/link'
+import ResetPassword            from '@identity/recovery-fragment'
 
 export const RecoveryPage = () => (
   <RecoveryFlow>

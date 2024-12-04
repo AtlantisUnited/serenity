@@ -1,8 +1,7 @@
 import { useUser }     from '@atls/react-user'
-
-import React           from 'react'
 import { useCallback } from 'react'
 import { useIntl }     from 'react-intl'
+import React           from 'react'
 
 import { useDrawer }   from '@ui/drawer'
 

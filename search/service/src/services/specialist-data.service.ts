@@ -3,7 +3,6 @@ import { OnModuleInit }                                from '@nestjs/common'
 import { ElasticsearchService }                        from '@nestjs/elasticsearch'
 import { Client }                                      from '@nestjs/microservices'
 import { ClientGrpc }                                  from '@nestjs/microservices'
-
 import { firstValueFrom }                              from 'rxjs'
 
 import { clientOptions as catalogClientOptions }       from '@protos/catalog'

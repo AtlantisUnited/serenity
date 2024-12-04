@@ -4,11 +4,11 @@ import { Global }                 from '@nestjs/common'
 import { Module }                 from '@nestjs/common'
 import { TypeOrmModule }          from '@nestjs/typeorm'
 
-import config                     from './config'
 import { File }                   from './entities'
 import { Upload }                 from './entities'
 import { FileEntityRepository }   from './repositories'
 import { UploadEntityRepository } from './repositories'
+import config                     from './config'
 
 const feature = TypeOrmModule.forFeature([Upload, File])
 

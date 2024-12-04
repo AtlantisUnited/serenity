@@ -1,5 +1,4 @@
 import { withHelmet }         from '@atls/next-app-with-helmet'
-
 import App                    from 'next/app'
 import React                  from 'react'
 import compose                from 'recompose/compose'

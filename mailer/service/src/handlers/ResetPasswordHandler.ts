@@ -1,7 +1,6 @@
 import { HandlesMessage }         from '@monstrs/nestjs-bus'
 import { InjectRepository }       from '@nestjs/typeorm'
 import { Handler }                from '@node-ts/bus-core'
-
 import { Repository }             from 'typeorm'
 
 import { ResetPasswordRequested } from '@identity/domain'

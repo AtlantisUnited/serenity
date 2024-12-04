@@ -1,11 +1,10 @@
 import styled                from '@emotion/styled'
-
-import React                 from 'react'
 import { useEffect }         from 'react'
 import { useRef }            from 'react'
 import { useState }          from 'react'
 import { useSwipeable }      from 'react-swipeable'
 import { ifProp }            from 'styled-tools'
+import React                 from 'react'
 
 import { ArrowBackwardIcon } from '@ui/icons'
 import { ArrowForwardIcon }  from '@ui/icons'

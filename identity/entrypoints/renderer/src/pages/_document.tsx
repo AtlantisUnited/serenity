@@ -1,6 +1,5 @@
 import { withHelmet }      from '@atls/next-document-with-helmet'
 import { extractCritical } from '@emotion/server'
-
 import Document            from 'next/document'
 import React               from 'react'
 import compose             from 'recompose/compose'

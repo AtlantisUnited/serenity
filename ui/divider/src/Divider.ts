@@ -1,5 +1,4 @@
 import styled     from '@emotion/styled'
-
 import { ifProp } from 'styled-tools'
 
 export interface DividerProps {
