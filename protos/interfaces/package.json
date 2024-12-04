@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "rxjs": "6.5.3",
-    "rxjs-grpc": "0.2.5"
+    "rxjs-grpc": "0.2.7"
   },
   "peerDependencies": {
     "@nestjs/core": "*"
