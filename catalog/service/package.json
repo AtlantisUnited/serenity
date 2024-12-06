@@ -2,6 +2,7 @@
   "name": "@catalog/service",
   "version": "0.1.1",
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "src/index.ts",
   "scripts": {
     "build": "yarn service build",
