@@ -6,7 +6,7 @@ import { Connection }                 from 'typeorm'
 
 import { Category as CategoryEntity } from '@catalog/domain'
 
-import { Category }                   from '../entities'
+import { Category }                   from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

@@ -15,9 +15,10 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
-    image: node:16
+    image: node:22
     working_dir: /workspace
     volumes:
+      - yarn:/.yarn/berry
       - ./:/workspace
     entrypoint: yarn
 
@@ -279,11 +280,11 @@ services:
       - catalog-service
 
   catalog-service:
-    image: node:16-alpine
+    image: node:22
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
+      - yarn:/.yarn/berry
     entrypoint: yarn workspace @catalog/service dev
     depends_on:
       - rabbitmq
@@ -392,6 +393,7 @@ volumes:
   modules:
   yarncache:
   unplugged:
+  yarn:
 
 networks:
   traefik:
