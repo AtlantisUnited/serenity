@@ -1204,18 +1204,19 @@ __metadata:
     "@atls/nestjs-map-errors-interceptor": "npm:^0.1.36"
     "@catalog/domain": "npm:0.1.1"
     "@catalog/persistence": "npm:0.1.1"
-    "@nestjs/common": "npm:8.4.2"
-    "@nestjs/core": "npm:8.4.2"
-    "@nestjs/microservices": "npm:8.4.2"
-    "@nestjs/testing": "npm:8.4.2"
-    "@nestjs/typeorm": "npm:8.0.3"
-    class-validator: "npm:0.11.0"
-    rxjs: "npm:^7.0.1"
-    typeorm: "npm:0.3.3"
-    uuid: "npm:3.4.0"
+    "@nestjs/common": "npm:10.4.13"
+    "@nestjs/core": "npm:10.4.13"
+    "@nestjs/microservices": "npm:10.4.13"
+    "@nestjs/testing": "npm:10.4.13"
+    "@nestjs/typeorm": "npm:10.0.2"
+    "@types/uuid": "npm:10.0.0"
+    class-validator: "npm:0.14.1"
+    rxjs: "npm:^7.8.1"
+    typeorm: "npm:0.3.20"
+    uuid: "npm:11.0.3"
   peerDependencies:
-    "@nestjs/common": "*"
-    "@nestjs/core": "*"
+    "@nestjs/common": ^10.4.13
+    "@nestjs/core": ^10.4.13
   languageName: unknown
   linkType: soft
 
@@ -1223,13 +1224,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@catalog/domain@workspace:catalog/domain"
   dependencies:
-    "@nestjs/common": "npm:8.4.2"
+    "@nestjs/common": "npm:10.4.13"
     "@node-ts/bus-core": "npm:0.6.3"
     "@node-ts/bus-messages": "npm:0.1.10"
     "@node-ts/ddd": "npm:^0.1.6"
     "@node-ts/ddd-types": "npm:^0.1.4"
     "@node-ts/logger-core": "npm:0.1.0"
-    uuid: "npm:3.4.0"
+    "@types/uuid": "npm:10.0.0"
+    uuid: "npm:11.0.3"
   languageName: unknown
   linkType: soft
 
@@ -1241,21 +1243,21 @@ __metadata:
     "@godaddy/terminus": "npm:^4.10.2"
     "@monstrs/nestjs-bus": "npm:0.1.4"
     "@monstrs/nestjs-logger": "npm:0.1.2"
-    "@nestjs/common": "npm:8.4.2"
-    "@nestjs/core": "npm:^8.4.3"
-    "@nestjs/typeorm": "npm:8.0.3"
+    "@nestjs/common": "npm:10.4.13"
+    "@nestjs/core": "npm:10.4.13"
+    "@nestjs/typeorm": "npm:10.0.2"
     "@node-ts/ddd": "npm:^0.1.6"
     "@node-ts/ddd-types": "npm:^0.1.4"
-    "@types/node": "npm:12.12.14"
+    "@types/node": "npm:22.10.1"
     pg: "npm:8.5.1"
-    reflect-metadata: "npm:^0.1.13"
-    rxjs: "npm:^7.0.1"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.1"
     ts-node: "npm:8.10.2"
     typeorm: "npm:0.3.3"
     typescript: "npm:^4.2.2"
   peerDependencies:
-    "@nestjs/common": "*"
-    "@nestjs/core": "*"
+    "@nestjs/common": ^10.4.13
+    "@nestjs/core": ^10.4.13
   languageName: unknown
   linkType: soft
 
@@ -1272,18 +1274,18 @@ __metadata:
     "@monstrs/nestjs-bus": "npm:0.1.4"
     "@monstrs/nestjs-bus-health": "npm:0.1.0"
     "@monstrs/server-scripts": "npm:0.1.5"
-    "@nestjs/common": "npm:8.4.2"
-    "@nestjs/core": "npm:8.4.2"
-    "@nestjs/microservices": "npm:8.4.2"
-    "@nestjs/terminus": "npm:8.0.6"
+    "@nestjs/common": "npm:10.4.13"
+    "@nestjs/core": "npm:10.4.13"
+    "@nestjs/microservices": "npm:10.4.13"
+    "@nestjs/terminus": "npm:10.2.3"
     "@protos/catalog": "npm:0.1.1"
     "@protos/common": "workspace:^"
     "@types/amqplib": "npm:^0"
-    "@types/node": "npm:12.12.14"
+    "@types/node": "npm:22.10.1"
     amqplib: "npm:^0.8.0"
-    reflect-metadata: "npm:0.1.13"
-    rxjs: "npm:6.5.3"
-    typescript: "npm:^4.2.2"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.1"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -3994,7 +3996,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/common@npm:*":
+"@nestjs/common@npm:*, @nestjs/common@npm:10.4.13":
   version: 10.4.13
   resolution: "@nestjs/common@npm:10.4.13"
   dependencies:
@@ -4141,7 +4143,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/microservices@npm:*":
+"@nestjs/microservices@npm:*, @nestjs/microservices@npm:10.4.13":
   version: 10.4.13
   resolution: "@nestjs/microservices@npm:10.4.13"
   dependencies:
@@ -4317,6 +4319,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nestjs/testing@npm:10.4.13":
+  version: 10.4.13
+  resolution: "@nestjs/testing@npm:10.4.13"
+  dependencies:
+    tslib: "npm:2.8.1"
+  peerDependencies:
+    "@nestjs/common": ^10.0.0
+    "@nestjs/core": ^10.0.0
+    "@nestjs/microservices": ^10.0.0
+    "@nestjs/platform-express": ^10.0.0
+  peerDependenciesMeta:
+    "@nestjs/microservices":
+      optional: true
+    "@nestjs/platform-express":
+      optional: true
+  checksum: 10/d70034246a53ecdf605d372cf49569672e80a13cfefb100f73c419cf5612aea145f2929993867de959b8de511d6832756c1f068d7310023450714782e0652b5b
+  languageName: node
+  linkType: hard
+
 "@nestjs/testing@npm:8.4.2":
   version: 8.4.2
   resolution: "@nestjs/testing@npm:8.4.2"
@@ -4337,7 +4358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/typeorm@npm:*":
+"@nestjs/typeorm@npm:*, @nestjs/typeorm@npm:10.0.2":
   version: 10.0.2
   resolution: "@nestjs/typeorm@npm:10.0.2"
   dependencies:
@@ -7624,6 +7645,13 @@ __metadata:
   version: 1.0.3
   resolution: "@types/treeify@npm:1.0.3"
   checksum: 10/777e579b30a916a781e7cbad2b7a76bc5473ff7bfe7167dd6de47f80f4386df5bf3d0dc34170afb75d52e75f6ed61cc109abf2324e093c1f9ecd4e79fec58d0c
+  languageName: node
+  linkType: hard
+
+"@types/uuid@npm:10.0.0":
+  version: 10.0.0
+  resolution: "@types/uuid@npm:10.0.0"
+  checksum: 10/e3958f8b0fe551c86c14431f5940c3470127293280830684154b91dc7eb3514aeb79fe3216968833cf79d4d1c67f580f054b5be2cd562bebf4f728913e73e944
   languageName: node
   linkType: hard
 
@@ -25926,7 +25954,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reflect-metadata@npm:*":
+"reflect-metadata@npm:*, reflect-metadata@npm:0.2.2":
   version: 0.2.2
   resolution: "reflect-metadata@npm:0.2.2"
   checksum: 10/1c93f9ac790fea1c852fde80c91b2760420069f4862f28e6fae0c00c6937a56508716b0ed2419ab02869dd488d123c4ab92d062ae84e8739ea7417fae10c4745
@@ -30195,6 +30223,15 @@ __metadata:
   version: 1.0.1
   resolution: "utils-merge@npm:1.0.1"
   checksum: 10/5d6949693d58cb2e636a84f3ee1c6e7b2f9c16cb1d42d0ecb386d8c025c69e327205aa1c69e2868cc06a01e5e20681fbba55a4e0ed0cce913d60334024eae798
+  languageName: node
+  linkType: hard
+
+"uuid@npm:11.0.3":
+  version: 11.0.3
+  resolution: "uuid@npm:11.0.3"
+  bin:
+    uuid: dist/esm/bin/uuid
+  checksum: 10/251385563195709eb0697c74a834764eef28e1656d61174e35edbd129288acb4d95a43f4ce8a77b8c2fc128e2b55924296a0945f964b05b9173469d045625ff2
   languageName: node
   linkType: hard
 
