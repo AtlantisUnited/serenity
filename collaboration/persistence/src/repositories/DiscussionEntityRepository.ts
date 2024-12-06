@@ -7,7 +7,7 @@ import { Connection }                     from 'typeorm'
 
 import { Discussion as DiscussionEntity } from '@collaboration/domain'
 
-import { Discussion }                     from '../entities'
+import { Discussion }                     from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

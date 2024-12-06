@@ -5,7 +5,7 @@ import { Repository }       from 'typeorm'
 import { Chat }             from '@collaboration/persistence'
 import { Discussion }       from '@collaboration/persistence'
 
-import { FindAllResponse }  from '../interfaces'
+import { FindAllResponse }  from '../interfaces/index.js'
 
 @Injectable()
 export class DiscussionQueriesService {

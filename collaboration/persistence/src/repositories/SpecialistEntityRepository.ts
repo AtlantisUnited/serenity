@@ -7,7 +7,7 @@ import { Connection }                     from 'typeorm'
 
 import { Specialist as SpecialistEntity } from '@collaboration/domain'
 
-import { Specialist }                     from '../entities'
+import { Specialist }                     from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

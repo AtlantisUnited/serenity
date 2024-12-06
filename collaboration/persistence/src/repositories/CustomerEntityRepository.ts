@@ -7,7 +7,7 @@ import { Connection }                 from 'typeorm'
 
 import { Customer as CustomerEntity } from '@collaboration/domain'
 
-import { Customer }                   from '../entities'
+import { Customer }                   from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

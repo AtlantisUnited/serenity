@@ -7,7 +7,7 @@ import { Connection }         from 'typeorm'
 
 import { Chat as ChatEntity } from '@collaboration/domain'
 
-import { Chat }               from '../entities'
+import { Chat }               from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

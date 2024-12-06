@@ -6,7 +6,7 @@ import { Connection }           from 'typeorm'
 
 import { Reply as ReplyEntity } from '@collaboration/domain'
 
-import { Reply }                from '../entities'
+import { Reply }                from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

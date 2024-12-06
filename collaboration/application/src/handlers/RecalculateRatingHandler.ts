@@ -3,7 +3,7 @@ import { Handler }                    from '@node-ts/bus-core'
 import { ReviewCreated }              from '@collaboration/domain'
 import { SpecialistEntityRepository } from '@collaboration/persistence'
 
-import { ReviewQueriesService }       from '../services'
+import { ReviewQueriesService }       from '../services/index.js'
 
 export class RecalculateRatingHandler implements Handler<ReviewCreated> {
   constructor(

@@ -6,7 +6,7 @@ import { Connection }               from 'typeorm'
 
 import { Message as MessageEntity } from '@collaboration/domain'
 
-import { Message }                  from '../entities'
+import { Message }                  from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

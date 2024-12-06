@@ -6,7 +6,7 @@ import { Connection }               from 'typeorm'
 
 import { Project as ProjectEntity } from '@collaboration/domain'
 
-import { Project }                  from '../entities'
+import { Project }                  from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

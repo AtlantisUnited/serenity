@@ -2,7 +2,7 @@ import { AggregateRoot }           from '@node-ts/ddd'
 import { AggregateRootProperties } from '@node-ts/ddd-types'
 import uuid                        from 'uuid/v4'
 
-import { ReviewCreated }           from '../events'
+import { ReviewCreated }           from '../events/index.js'
 
 export class Review extends AggregateRoot implements AggregateRootProperties {
   projectId: string

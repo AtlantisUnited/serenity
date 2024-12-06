@@ -6,7 +6,7 @@ import { Connection }             from 'typeorm'
 
 import { Review as ReviewEntity } from '@collaboration/domain'
 
-import { Review }                 from '../entities'
+import { Review }                 from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore
