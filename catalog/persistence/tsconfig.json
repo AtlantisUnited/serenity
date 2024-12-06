@@ -1,3 +1,7 @@
 {
-  "extends": "@monstrs/tsconfig/tsconfig.service.json"
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "NodeNext"
+  }
 }
