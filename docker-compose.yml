@@ -318,10 +318,11 @@ services:
       - db
 
   collaboration:
-    image: node:16-alpine
+    image: node:22
     working_dir: /workspace
     volumes:
       - ./:/workspace
+      - yarn:/.yarn/berry
     entrypoint: yarn workspace @collaboration/service dev
     environment:
       - DB_HOST=db
