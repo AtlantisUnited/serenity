@@ -30,20 +30,6 @@
   },
   "include": [
     "catalog/**/*",
-    "collaboration/**/*",
-    "files/**/*",
-    "hits/**/*",
-    "mailer/**/*",
-    "portfolio/**/*",
-    "private-gateway/**/*",
-    "public-gateway/**/*",
-    "protos/**/*",
-    "identity/**/*",
-    "search/**/*",
-    "ui/**/*",
-    "fragments/**/*",
-    "site/**/*",
-    "email/**/*"
-  ],
-  "exclude": ["./**/**/src/stories"]
+    "protos/**/*"
+  ]
 }

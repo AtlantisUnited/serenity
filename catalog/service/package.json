@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@atls/nestjs-map-errors-interceptor": "^0.1.36",
-    "@catalog/application": "0.1.1",
-    "@catalog/domain": "0.1.1",
-    "@catalog/persistence": "0.1.1",
+    "@catalog/application": "workspace:*",
+    "@catalog/domain": "workspace:*",
+    "@catalog/persistence": "workspace:*",
     "@godaddy/terminus": "^4.10.2",
     "@grpc/proto-loader": "0.5.5",
     "@monstrs/nestjs-bus": "0.1.4",
@@ -22,8 +22,8 @@
     "@nestjs/core": "10.4.13",
     "@nestjs/microservices": "10.4.13",
     "@nestjs/terminus": "10.2.3",
-    "@protos/catalog": "0.1.1",
-    "@protos/common": "workspace:^",
+    "@protos/catalog": "workspace:*",
+    "@protos/common": "workspace:*",
     "reflect-metadata": "0.2.2",
     "rxjs": "7.8.1",
     "typescript": "5.5.4"
