@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/index.ts",
   "dependencies": {
-    "@nestjs/common": "10.4.13",
+    "@nestjs/common": "10.4.15",
     "@node-ts/bus-core": "0.6.3",
     "@node-ts/bus-messages": "0.1.10",
     "@node-ts/ddd": "^0.1.6",

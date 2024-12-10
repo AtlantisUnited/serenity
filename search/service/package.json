@@ -32,7 +32,7 @@
     "amqplib": "^0.9.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3",
-    "typescript": "3.7.2"
+    "typescript": "5.5.4"
   },
   "devDependencies": {
     "@monstrs/server-scripts": "0.1.3",

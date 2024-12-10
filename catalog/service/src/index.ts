@@ -11,7 +11,7 @@ const bootstrap = async () => {
 
   app.connectMicroservice(serverOptions)
 
-  await app.startAllMicroservicesAsync()
+  await app.startAllMicroservices()
   await app.listen(3000)
 
   if (module.hot) {

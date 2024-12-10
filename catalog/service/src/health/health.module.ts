@@ -16,10 +16,7 @@ export class HealthCoreModule {}
   imports: [
     HealthCoreModule,
     BusHealthModule,
-    TerminusModule.forRootAsync({
-      imports: [HealthCoreModule],
-      useExisting: TerminusOptionsService,
-    }),
+    HealthCoreModule,
   ],
 })
 export class HealthModule {}

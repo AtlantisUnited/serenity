@@ -1,5 +1,5 @@
 import { MinLength } from 'class-validator'
-import uuid          from 'uuid/v4'
+import { v4 as uuid }          from 'uuid'
 
 export class CreateCategoryGroupCommand {
   id: string = uuid()

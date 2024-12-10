@@ -22,7 +22,7 @@
     "strictPropertyInitialization": false,
     "sourceMap": false,
     "module": "NodeNext",
-    "target": "es2021",
+    "target": "es2022",
     "jsx": "react",
     "outDir": "./dist",
     "noImplicitOverride": true,
