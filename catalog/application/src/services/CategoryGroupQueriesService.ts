@@ -12,6 +12,7 @@ export class CategoryGroupQueriesService {
     private readonly categoryGroupRepository: Repository<CategoryGroup>
   ) {}
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async findAll(filters: any = {}): Promise<any> {
     const qb = await this.categoryGroupRepository
       .createQueryBuilder('group')

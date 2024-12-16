@@ -11,7 +11,7 @@ import { UpdateCategoryCommand }    from '../commands/index.js'
 export class CategoryService {
   constructor(private readonly categoryRepository: CategoryEntityRepository) {}
 
-  async create(command: CreateCategoryCommand): Promise<any> {
+  async create(command: CreateCategoryCommand): Promise<Category> {
     const category = await Category.create(command.id, command.groupId, command.name)
 
     await this.categoryRepository.save(category)
@@ -19,7 +19,7 @@ export class CategoryService {
     return category
   }
 
-  async update(command: UpdateCategoryCommand): Promise<any> {
+  async update(command: UpdateCategoryCommand): Promise<Category> {
     const category = await this.categoryRepository.getById(command.id)
 
     category.update(command.name)
@@ -29,7 +29,7 @@ export class CategoryService {
     return category
   }
 
-  async delete(command: DeleteCategoryCommand): Promise<any> {
+  async delete(command: DeleteCategoryCommand): Promise<{ id: string }> {
     const category = await this.categoryRepository.getById(command.id)
 
     category.purge()

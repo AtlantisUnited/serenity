@@ -18,14 +18,13 @@ const feature = TypeOrmModule.forFeature([CategoryGroup, Category])
     LoggerModule,
     feature.module,
     TypeOrmModule.forRoot(config),
+    TypeOrmModule.forFeature([CategoryGroup, Category]),
     BusModule.forRabbitMq({
       queueName: 'catalog',
       connectionString: process.env.BUS_URL || 'amqp://local:password@rabbitmq:5672/?heartbeat=30',
     }),
   ],
-  // @ts-ignore
-  providers: [...feature.providers, CategoryGroupEntityRepository, CategoryEntityRepository],
-  // @ts-ignore
-  exports: [...feature.exports, CategoryGroupEntityRepository, CategoryEntityRepository],
+  providers: [CategoryGroupEntityRepository, CategoryEntityRepository],
+  exports: [TypeOrmModule, CategoryGroupEntityRepository, CategoryEntityRepository],
 })
 export class PersistenceModule {}

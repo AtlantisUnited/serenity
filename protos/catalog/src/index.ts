@@ -1,18 +1,12 @@
-import { ClientOptions }              from '@nestjs/microservices'
+import type { ClientOptions }         from '@nestjs/microservices'
+
+import path                           from 'node:path'
+
 import { Transport }                  from '@nestjs/microservices'
-/* eslint-disable @typescript-eslint/naming-convention */
-/* eslint-disable no-underscore-dangle */
-import path                           from 'path'
 
 import { PROTO_PATH as COMMON_PROTO } from '@protos/common'
 
-import { name }                       from '../package.json'
-
-declare const __non_webpack_require__: any
-
-const protosPath = path.dirname(
-  (typeof __non_webpack_require__ !== 'undefined' ? __non_webpack_require__ : require).resolve(name)
-)
+const protosPath = path.dirname(new URL(import.meta.url).pathname)
 
 export const PROTO_PATH = path.join(protosPath, '../catalog.proto')
 

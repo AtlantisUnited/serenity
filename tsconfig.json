@@ -28,8 +28,5 @@
     "noImplicitOverride": true,
     "skipLibCheck": true
   },
-  "include": [
-    "catalog/**/*",
-    "protos/**/*"
-  ]
+  "include": ["catalog/**/*", "protos/**/*", "types/**/*"]
 }

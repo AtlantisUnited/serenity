@@ -9,14 +9,14 @@ import { Category as CategoryEntity } from '@catalog/domain'
 import { Category }                   from '../entities/index.js'
 
 @Injectable()
-// @ts-ignore
+// @ts-expect-error - no types available
 export class CategoryEntityRepository extends WriteRepository<CategoryEntity, Category> {
   constructor(
     private readonly connection: Connection,
     private readonly logger: Logger,
     private readonly bus: Bus
   ) {
-    // @ts-ignore
+    // @ts-expect-error - no types available
     super(CategoryEntity, Category, connection, bus, logger)
   }
 }

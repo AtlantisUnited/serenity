@@ -1,8 +1,8 @@
-import { MigrationInterface } from 'typeorm'
-import { QueryRunner }        from 'typeorm'
+import type { MigrationInterface } from 'typeorm'
+import type { QueryRunner }        from 'typeorm'
 
 export class CategoryGroupChangePrimaryColumn1564569981769 implements MigrationInterface {
-  public async up(queryRunner: QueryRunner): Promise<any> {
+  public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query('DELETE FROM "category";')
     await queryRunner.query('DELETE FROM "category_group";')
 
@@ -32,7 +32,7 @@ export class CategoryGroupChangePrimaryColumn1564569981769 implements MigrationI
     )
   }
 
-  public async down(queryRunner: QueryRunner): Promise<any> {
+  public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(
       'ALTER TABLE "category" DROP CONSTRAINT "FK_8f10a7ed9195884100d46c26404"'
     )

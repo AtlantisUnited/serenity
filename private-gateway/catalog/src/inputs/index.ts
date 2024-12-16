@@ -1,7 +1,0 @@
-export * from './CreateCategoryGroupInput'
-export * from './UpdateCategoryGroupInput'
-export * from './DeleteCategoryGroupInput'
-export * from './CreateCategoryInput'
-export * from './UpdateCategoryInput'
-export * from './DeleteCategoryInput'
-export * from './CategoryGroupsFilter'

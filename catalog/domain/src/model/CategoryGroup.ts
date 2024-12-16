@@ -1,10 +1,11 @@
-import { AggregateRoot }           from '@node-ts/ddd'
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { AggregateRootProperties } from '@node-ts/ddd-types'
+import type { AggregateRootProperties } from '@node-ts/ddd-types'
 
-import { CategoryGroupCreated }    from '../events/index.js'
-import { CategoryGroupDeleted }    from '../events/index.js'
-import { CategoryGroupUpdated }    from '../events/index.js'
+import { AggregateRoot }                from '@node-ts/ddd'
+
+import { CategoryGroupCreated }         from '../events/index.js'
+import { CategoryGroupDeleted }         from '../events/index.js'
+import { CategoryGroupUpdated }         from '../events/index.js'
 
 export interface CategoryGroupProperties extends AggregateRootProperties {
   name: string
@@ -21,11 +22,11 @@ export class CategoryGroup extends AggregateRoot implements CategoryGroupPropert
     return categoryGroup
   }
 
-  update(name: string) {
+  update(name: string): void {
     this.when(new CategoryGroupUpdated(this.id, name))
   }
 
-  purge() {
+  purge(): void {
     this.delete(new CategoryGroupDeleted(this.id))
   }
 

@@ -8,8 +8,8 @@ interface PageInfo {
   hasNext: boolean
 }
 
-interface FindAllResponse<T> {
-  rows: T[]
+export interface FindAllResponse<T> {
+  rows: Array<T>
   pageInfo: PageInfo
 }
 
@@ -20,6 +20,7 @@ export class CategoryQueriesService {
     private readonly categoryRepository: Repository<Category>
   ) {}
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async findAll(filters: any = {}): Promise<FindAllResponse<Category>> {
     const qb = await this.categoryRepository.createQueryBuilder('category')
 

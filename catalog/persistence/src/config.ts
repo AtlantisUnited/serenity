@@ -1,7 +1,7 @@
-import { TypeOrmModuleOptions } from '@nestjs/typeorm'
+import type { TypeOrmModuleOptions } from '@nestjs/typeorm'
 
-import * as entities            from './entities/index.js'
-import * as migrations          from './migrations/index.js'
+import * as entities                 from './entities/index.js'
+import * as migrations               from './migrations/index.js'
 
 const config: TypeOrmModuleOptions = {
   type: 'postgres',

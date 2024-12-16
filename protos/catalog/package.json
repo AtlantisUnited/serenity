@@ -1,8 +1,8 @@
 {
   "name": "@protos/catalog",
   "version": "0.1.1",
-  "type": "module",
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "src/index.ts",
   "dependencies": {
     "@nestjs/microservices": "10.4.15",

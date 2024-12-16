@@ -1,13 +1,10 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-underscore-dangle */
-import path     from 'path'
+import { fileURLToPath } from 'url'
+import path              from 'path'
 
-import { name } from '../package.json'
-
-declare const __non_webpack_require__: any
-
-const protosPath = path.dirname(
-  (typeof __non_webpack_require__ !== 'undefined' ? __non_webpack_require__ : require).resolve(name)
-)
+// Resolve the directory of the current module file using import.meta.url
+const __filename = fileURLToPath(import.meta.url)
+const protosPath = path.dirname(__filename)
 
 export const PROTO_PATH = path.join(protosPath, '../common.proto')

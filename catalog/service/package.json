@@ -3,8 +3,8 @@
   "version": "0.1.1",
   "license": "BSD-3-Clause",
   "type": "module",
-  "main": "src/index.ts",
   "exports": "./src/index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "build": "yarn service build",
     "dev": "yarn service dev",
@@ -15,7 +15,7 @@
     "@catalog/application": "workspace:*",
     "@catalog/domain": "workspace:*",
     "@catalog/persistence": "workspace:*",
-    "@godaddy/terminus": "^4.10.2",
+    "@godaddy/terminus": "^4.12.1",
     "@grpc/proto-loader": "0.5.6",
     "@monstrs/nestjs-bus": "0.1.4",
     "@monstrs/nestjs-bus-health": "0.1.0",

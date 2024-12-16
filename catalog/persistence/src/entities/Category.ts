@@ -32,7 +32,7 @@ export class Category {
 
   private _groupId: string
 
-  set groupId(groupId) {
+  set groupId(groupId: string) {
     if (!this.group) {
       this.group = groupId
     }
@@ -40,7 +40,7 @@ export class Category {
     this._groupId = groupId
   }
 
-  get groupId() {
+  get groupId(): string {
     return this._groupId
   }
 }

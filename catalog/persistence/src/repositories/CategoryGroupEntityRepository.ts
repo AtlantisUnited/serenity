@@ -9,7 +9,7 @@ import { CategoryGroup as CategoryGroupEntity } from '@catalog/domain'
 import { CategoryGroup }                        from '../entities/index.js'
 
 @Injectable()
-// @ts-ignore
+// @ts-expect-error - no types available
 export class CategoryGroupEntityRepository extends WriteRepository<
   CategoryGroupEntity,
   CategoryGroup
@@ -19,7 +19,7 @@ export class CategoryGroupEntityRepository extends WriteRepository<
     private readonly logger: Logger,
     private readonly bus: Bus
   ) {
-    // @ts-ignore
+    // @ts-expect-error - no types available
     super(CategoryGroupEntity, CategoryGroup, connection, bus, logger)
   }
 }

@@ -3,8 +3,8 @@
   "version": "0.1.1",
   "license": "BSD-3-Clause",
   "type": "module",
-  "main": "src/index.ts",
   "exports": "./src/index.ts",
+  "main": "src/index.ts",
   "devDependencies": {
     "@atls/nestjs-map-errors-interceptor": "^0.1.36",
     "@catalog/domain": "workspace:*",

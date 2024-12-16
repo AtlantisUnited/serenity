@@ -1,8 +1,8 @@
-import { MigrationInterface } from 'typeorm'
-import { QueryRunner }        from 'typeorm'
+import type { MigrationInterface } from 'typeorm'
+import type { QueryRunner }        from 'typeorm'
 
 export class CreateCategoriesAndGroups1564387862723 implements MigrationInterface {
-  public async up(queryRunner: QueryRunner): Promise<any> {
+  public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(
       'CREATE TABLE "category_group" ("id" SERIAL NOT NULL, "name" character varying NOT NULL, "createdAt" TIMESTAMP NOT NULL DEFAULT now(), "updatedAt" TIMESTAMP NOT NULL DEFAULT now(), CONSTRAINT "PK_dc80af15ad8913831d0c359018d" PRIMARY KEY ("id"))'
     )
@@ -14,7 +14,7 @@ export class CreateCategoriesAndGroups1564387862723 implements MigrationInterfac
     )
   }
 
-  public async down(queryRunner: QueryRunner): Promise<any> {
+  public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(
       'ALTER TABLE "category" DROP CONSTRAINT "FK_8f10a7ed9195884100d46c26404"'
     )

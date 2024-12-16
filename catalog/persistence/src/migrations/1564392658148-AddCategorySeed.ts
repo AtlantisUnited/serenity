@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 
-import { MigrationInterface } from 'typeorm'
-import { QueryRunner }        from 'typeorm'
+import type { MigrationInterface } from 'typeorm'
+import type { QueryRunner }        from 'typeorm'
 
 export class AddCategorySeed1564392658148 implements MigrationInterface {
-  public async up(queryRunner: QueryRunner): Promise<any> {
+  public async up(queryRunner: QueryRunner): Promise<void> {
     const [{ id: groupId }] = await queryRunner.query(
       `INSERT INTO public.category_group (name) VALUES ('Комплексные работы') RETURNING id;`
     )
@@ -22,5 +22,5 @@ export class AddCategorySeed1564392658148 implements MigrationInterface {
     )
   }
 
-  public async down(queryRunner: QueryRunner): Promise<any> {}
+  public async down(queryRunner: QueryRunner): Promise<void> {}
 }

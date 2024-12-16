@@ -11,6 +11,7 @@ import { UpdateCategoryGroupCommand }    from '../commands/index.js'
 export class CategoryGroupService {
   constructor(private readonly categoryGroupRepository: CategoryGroupEntityRepository) {}
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async create(command: CreateCategoryGroupCommand): Promise<any> {
     const categoryGroup = await CategoryGroup.create(command.id, command.name)
 
@@ -19,6 +20,7 @@ export class CategoryGroupService {
     return categoryGroup
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async update(command: UpdateCategoryGroupCommand): Promise<any> {
     const categoryGroup = await this.categoryGroupRepository.getById(command.id)
 
@@ -29,7 +31,7 @@ export class CategoryGroupService {
     return categoryGroup
   }
 
-  async delete(command: DeleteCategoryGroupCommand): Promise<any> {
+  async delete(command: DeleteCategoryGroupCommand): Promise<{ id: string }> {
     const categoryGroup = await this.categoryGroupRepository.getById(command.id)
 
     categoryGroup.purge()

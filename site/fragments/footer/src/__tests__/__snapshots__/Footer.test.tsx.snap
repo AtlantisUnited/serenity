@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Footer fragment snapshots should match latest render snapshot 1`] = `
-<DocumentFragment>
-  <div />
-</DocumentFragment>
-`;

@@ -1,47 +1,49 @@
-import { MapValidationErrorsInterceptor } from '@atls/nestjs-map-errors-interceptor'
-import { Controller }                     from '@nestjs/common'
-import { UseInterceptors }                from '@nestjs/common'
-import { UsePipes }                       from '@nestjs/common'
-import { ValidationPipe }                 from '@nestjs/common'
-import { GrpcMethod }                     from '@nestjs/microservices'
+// import { MapValidationErrorsInterceptor } from '@atls/nestjs-map-errors-interceptor'
+import { Controller }           from '@nestjs/common'
 
-import { CategoryGroupService }           from '@catalog/application'
-import { CreateCategoryGroupCommand }     from '@catalog/application'
-import { DeleteCategoryGroupCommand }     from '@catalog/application'
-import { UpdateCategoryGroupCommand }     from '@catalog/application'
+import { CategoryGroupService } from '@catalog/application'
+
+// import { UseInterceptors }            from '@nestjs/common'
+// import { UsePipes }                   from '@nestjs/common'
+// import { ValidationPipe }             from '@nestjs/common'
+// import { GrpcMethod }                 from '@nestjs/microservices'
+
+// import { CreateCategoryGroupCommand } from '@catalog/application'
+// import { DeleteCategoryGroupCommand } from '@catalog/application'
+// import { UpdateCategoryGroupCommand } from '@catalog/application'
 
 @Controller()
-@UseInterceptors(MapValidationErrorsInterceptor)
+// @UseInterceptors(MapValidationErrorsInterceptor)
 export class CategoryGroupController {
   constructor(private readonly categoryGroupService: CategoryGroupService) {}
 
-  @GrpcMethod('CatalogService', 'createCategoryGroup')
-  @UsePipes(new ValidationPipe({ transform: true }))
-  async createCategoryGroup(request: CreateCategoryGroupCommand) {
-    const result = await this.categoryGroupService.create(request)
-
-    return {
-      result,
-    }
-  }
-
-  @GrpcMethod('CatalogService', 'updateCategoryGroup')
-  @UsePipes(new ValidationPipe({ transform: true }))
-  async updateCategoryGroup(request: UpdateCategoryGroupCommand) {
-    const result = await this.categoryGroupService.update(request)
-
-    return {
-      result,
-    }
-  }
-
-  @GrpcMethod('CatalogService', 'deleteCategoryGroup')
-  @UsePipes(new ValidationPipe({ transform: true }))
-  async deleteCategoryGroup(request: DeleteCategoryGroupCommand) {
-    const result = await this.categoryGroupService.delete(request)
-
-    return {
-      result,
-    }
-  }
+  // @GrpcMethod('CatalogService', 'createCategoryGroup')
+  // @UsePipes(new ValidationPipe({ transform: true }))
+  // async createCategoryGroup(request: CreateCategoryGroupCommand) {
+  //   const result = await this.categoryGroupService.create(request)
+  //
+  //   return {
+  //     result,
+  //   }
+  // }
+  //
+  // @GrpcMethod('CatalogService', 'updateCategoryGroup')
+  // @UsePipes(new ValidationPipe({ transform: true }))
+  // async updateCategoryGroup(request: UpdateCategoryGroupCommand) {
+  //   const result = await this.categoryGroupService.update(request)
+  //
+  //   return {
+  //     result,
+  //   }
+  // }
+  //
+  // @GrpcMethod('CatalogService', 'deleteCategoryGroup')
+  // @UsePipes(new ValidationPipe({ transform: true }))
+  // async deleteCategoryGroup(request: DeleteCategoryGroupCommand) {
+  //   const result = await this.categoryGroupService.delete(request)
+  //
+  //   return {
+  //     result,
+  //   }
+  // }
 }

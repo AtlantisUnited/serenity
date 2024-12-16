@@ -4,9 +4,7 @@ import { serverOptions } from '@protos/catalog'
 
 import { ServiceModule } from './module.js'
 
-declare const module: any
-
-const bootstrap = async () => {
+const bootstrap = async (): Promise<void> => {
   const app = await NestFactory.create(ServiceModule)
 
   app.connectMicroservice(serverOptions)
@@ -14,9 +12,11 @@ const bootstrap = async () => {
   await app.startAllMicroservices()
   await app.listen(3000)
 
-  if (module.hot) {
-    module.hot.accept()
-    module.hot.dispose(() => app.close())
+  if (import.meta.webpackHot) {
+    import.meta.webpackHot.accept()
+    import.meta.webpackHot.dispose(() => {
+      app.close()
+    })
   }
 }
 
