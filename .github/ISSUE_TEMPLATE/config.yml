@@ -1,10 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Конвенция
-    url: https://github.com/atlantis-lab/convention
-    about: О процессах и не только
+    url: https://github.com/atls/convention
+    about: О наших релизах
   - name: Telegram
-    url: https://t.me/atlantis_lab
-    about: Складируем полезные статьи
-  - name: Discord
-    url: https://discord.gg/jmgjzSKgNg
+    url: https://t.me/atls
