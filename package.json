@@ -1,4 +1,5 @@
 {
+  "name": "serenity",
   "private": true,
   "type": "module",
   "workspaces": [
@@ -10,11 +11,6 @@
     "@types/node": "22.10.1",
     "eslint": "9.14.0",
     "typescript": "5.5.4"
-  },
-  "dependenciesMeta": {
-    "grpc": {
-      "built": false
-    }
   },
   "packageManager": "yarn@4.5.3",
   "typecheckSkipLibCheck": true

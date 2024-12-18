@@ -4,11 +4,8 @@
   "license": "BSD-3-Clause",
   "type": "module",
   "main": "src/index.ts",
-  "dependencies": {
+  "devDependencies": {
     "@nestjs/microservices": "10.4.15",
     "@protos/common": "workspace:*"
-  },
-  "peerDependencies": {
-    "@nestjs/core": "*"
   }
 }
