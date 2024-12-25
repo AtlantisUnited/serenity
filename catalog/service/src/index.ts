@@ -1,24 +1,27 @@
 // import { NestFactory }   from '@nestjs/core'
 
+import { NestFactory }   from '@nestjs/core'
+
 import { serverOptions } from '@protos/catalog'
+
+import { ServiceModule } from './module.js'
 
 // import { ServiceModule } from './module.js'
 
 const bootstrap = async (): Promise<void> => {
-  console.log(serverOptions)
-  // const app = await NestFactory.create(ServiceModule)
-  //
-  // app.connectMicroservice(serverOptions)
-  //
-  // await app.startAllMicroservices()
-  // await app.listen(3000)
+  // console.log(serverOptions)
+  const app = await NestFactory.create(ServiceModule)
 
-  // if (import.meta.webpackHot) {
-  //   import.meta.webpackHot.accept()
-  //   import.meta.webpackHot.dispose(() => {
-  //     app.close()
-  //   })
-  // }
+  app.connectMicroservice(serverOptions)
+
+  await app.startAllMicroservices()
+  await app.listen(3000)
+  if (import.meta.webpackHot) {
+    import.meta.webpackHot.accept()
+    import.meta.webpackHot.dispose(() => {
+      app.close()
+    })
+  }
 }
 
 bootstrap()
